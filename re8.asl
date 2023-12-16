@@ -93,6 +93,12 @@ start
 		// Start the timer
 		return true;
 	}
+
+	if(settings["meme"]){
+		if(current.Map == "st10_039_CentralChurch_Out"){
+			return true;
+		}
+	}
 }
 
 update
