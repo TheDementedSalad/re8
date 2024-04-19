@@ -47,7 +47,7 @@ init
 	IntPtr FadeManager = vars.Helper.ScanRel(3, "48 39 35 ?? ?? ?? ?? 4c 8b c3");
 	IntPtr InventoryManager = vars.Helper.ScanRel(3, "48 39 05 ?? ?? ?? ?? 48 0f 45 05 ?? ?? ?? ?? 48 85 c0 74 ?? 48 8b 40");
 	IntPtr Paused = vars.Helper.ScanRel(3, "48 8b 2d ?? ?? ?? ?? 48 85 c0 75 ?? 45 33 c0 8d 56");
-	IntPtr Cutscene = vars.Helper.ScanRel(3, "48 8b 0d ?? ?? ?? ?? e9 ?? ?? ?? ?? cc cc cc 48 89 5c 24 ?? 57");
+	IntPtr Cutscene = vars.Helper.ScanRel(3, "48 8b 0d ?? ?? ?? ?? 84 d2 48 8d 54 24");
 	
 	vars.Helper["EventName"] = vars.Helper.MakeString(EventSystemApp, 0x58, 0x68, 0x10, 0x20, 0x30, 0x14);
 	vars.Helper["EventName"].FailAction = MemoryWatcher.ReadFailAction.SetZeroOrNull;
