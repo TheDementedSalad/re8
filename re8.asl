@@ -88,7 +88,7 @@ start
 		}
 	}
 	
-	if(current.EventName != "c10e001_00" && old.EventName == "c10e001_00"){
+	if(current.EventName != "c10e001_00" && old.EventName == "c10e001_00" || current.EventName != "c101e020_00" && old.EventName == "c101e020_00"){
 		return true;
 	}
 }
